@@ -79,3 +79,21 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+.video-placeholder {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .video {
+        display: none;
+    }
+    .video-placeholder {
+        display: block;
+        background-image: url(../media/gregTrailer.png);
+        background-size: contain;
+        width: 100%;
+        height: inherit;
+        background-repeat: no-repeat;
+    }
+}

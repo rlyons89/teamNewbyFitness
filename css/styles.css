@@ -15,6 +15,115 @@ video {
   padding: 0;
 }
 
+@font-face {
+    font-family: Graphik;
+    font-weight: 100;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Thin.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 100;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Thin Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 900;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Super.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 900;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Super Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 600;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Semibold.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 600;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Semibold Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Regular.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 400;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Regular Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 500;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Medium.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 500;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Medium Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 300;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Light.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 300;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Light Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 200;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Extralight.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 200;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Extralight Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Bold.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 700;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Bold Italic.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 800;
+    font-style: normal;
+    src: url(../fonts/Graphik/Graphik-Black.ttf);
+}
+@font-face {
+    font-family: Graphik;
+    font-weight: 800;
+    font-style: italic;
+    src: url(../fonts/Graphik/Graphik-Black Italic.ttf);
+}
+
 /* =============================================================================
   HTML, BODY
 ============================================================================= */
@@ -25,7 +134,7 @@ body {
 
 body {
   font-size: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: "Graphik", "Arial", sans-serif;
   line-height: 1.5;
 }
 
@@ -97,3 +206,144 @@ body {
         background-repeat: no-repeat;
     }
 }
+
+.header, .footer {
+    height: 100px;
+    width: 100%;
+    background: black;
+    color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+.header {
+
+}
+
+.footer {
+    bottom: 0;
+}
+
+.logo {
+    height: 90px;
+    top: 12px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+}
+
+
+.primary-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 25px;
+}
+
+.primary-nav li {
+    float: left;
+}
+
+.primary-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.primary-nav li a:hover {
+    color: #00ff12;
+}
+
+.secondary-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 10px;
+}
+
+.secondary-nav li {
+    float: left;
+}
+
+.secondary-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.secondary-nav li a:hover {
+    color: #00ff12;
+}
+
+.primary-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 25px;
+    font-size: 12px;
+}
+
+.primary-footer li {
+    float: left;
+}
+
+.primary-footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.primary-footer li b {
+    padding: 0 16px;
+}
+
+.primary-footer li a:hover {
+    color: #00ff12;
+}
+
+.secondary-footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 25px;
+    right: 0;
+    font-size: 12px;
+}
+
+.secondary-footer li {
+    float: left;
+}
+
+.secondary-footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.secondary-footer li b, .secondary-footer li span {
+    padding: 0 16px;
+}
+
+.secondary-footer li a:hover {
+    color: #00ff12;
+}
+
+

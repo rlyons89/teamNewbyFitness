@@ -146,7 +146,6 @@ body {
   top: 30%;
   z-index: 2;
   margin: 0 auto;
-  max-width: 720px;
   text-align: center;
 }
 
@@ -227,9 +226,9 @@ body {
 .logo {
     height: 90px;
     top: 12px;
-    position: fixed;
-    left: 50%;
-    right: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
 }
 
 
@@ -349,9 +348,21 @@ body {
 .h1-splash {
     font-size: 100px;
     color: white;
-    position: fixed;
     left: 0;
     right: 0;
-    top: 40vh;
     font-weight: 900;
+}
+
+.primary-button {
+    background: #00ff12;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    outline: 0;
+    border: 0;
+    font-size: 28px;
+    font-weight: 900;
+    display: block;
+    margin: 0 auto;
 }

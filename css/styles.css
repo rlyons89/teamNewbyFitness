@@ -192,20 +192,6 @@ body {
     display: none;
 }
 
-@media (max-width: 600px) {
-    .video {
-        display: none;
-    }
-    .video-placeholder {
-        display: block;
-        background-image: url(../media/gregTrailer.png);
-        background-size: contain;
-        width: 100%;
-        height: inherit;
-        background-repeat: no-repeat;
-    }
-}
-
 .header, .footer {
     height: 100px;
     width: 100%;
@@ -365,4 +351,43 @@ body {
     font-weight: 900;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .video, .primary-nav, .secondary-nav {
+        display: none;
+    }
+    .video-placeholder {
+        display: block;
+        background-image: url(../media/gregTrailer.png);
+        background-size: cover;
+        width: 100%;
+        height: inherit;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: calc(100vh - 200px);
+        position: fixed;
+        width: 100%;
+        top: 100px;
+    }
+
+    .h1-splash {
+        font-size: 50px;
+    }
+
+    .secondary-footer {
+        display: none;
+    }
+
+    .primary-footer {
+        margin: 0 auto;
+        display: block;
+        width: 75%;
+        position: static;
+        margin-top: 30px;
+    }
+
+    .primary-button {
+        margin-top: 50px;
+    }
 }

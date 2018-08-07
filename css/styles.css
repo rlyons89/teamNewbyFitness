@@ -382,7 +382,6 @@ body {
     .primary-footer {
         margin: 0 auto;
         display: block;
-        width: 75%;
         position: static;
         margin-top: 30px;
     }

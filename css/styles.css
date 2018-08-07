@@ -346,4 +346,12 @@ body {
     color: #00ff12;
 }
 
-
+.h1-splash {
+    font-size: 100px;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40vh;
+    font-weight: 900;
+}

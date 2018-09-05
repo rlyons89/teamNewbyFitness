@@ -353,6 +353,21 @@ body {
     margin: 0 auto;
 }
 
+.class-column {
+    width: 30%;
+    padding: 0 15px;
+    display: inline-block;
+    top: -90px;
+    position: relative;
+}
+
+@media (max-width: 900px) {
+    .class-column {
+        width: calc(50% - 40px);
+    }
+}
+
+
 @media (max-width: 600px) {
     .video, .primary-nav, .secondary-nav {
         display: none;
@@ -388,5 +403,9 @@ body {
 
     .primary-button {
         margin-top: 50px;
+    }
+
+    .class-column {
+        width: calc(100% - 30px);
     }
 }

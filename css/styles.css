@@ -227,11 +227,21 @@ body {
     top: 25px;
 }
 
-.primary-nav li {
+.mobile-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 25px;
+    display: none;
+}
+
+.primary-nav li, .mobile-nav li {
     float: left;
 }
 
-.primary-nav li a {
+.primary-nav li a, .mobile-nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -239,7 +249,7 @@ body {
     text-decoration: none;
 }
 
-.primary-nav li a:hover {
+.primary-nav li a:hover, .mobile-nav li a:hover {
     color: #00ff12;
 }
 
@@ -370,9 +380,14 @@ body {
 
 
 @media (max-width: 600px) {
-    .video, .primary-nav, .secondary-nav {
+    .video, .primary-nav {
         display: none;
     }
+
+    .mobile-nav {
+        display: block;
+    }
+
     .video-placeholder {
         display: block;
         background-image: url(../media/gregTrailer.png);

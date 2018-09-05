@@ -15,8 +15,6 @@
         require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"fde567d77de98ec742bfe359e","lid":"e09ed6b397"}) })
         document.cookie = 'MCEvilPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
     };
-
-    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
   </script>
 </head>
 <body>
@@ -58,7 +56,7 @@
 </footer>
 
 <script type="text/javascript">
-
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
 
 (function() {
   /**

@@ -29,8 +29,8 @@
   <button class="primary-button">JOIN NOW!</button>
 </div><!-- /content -->
 
-<video id="splash-video" class="video" muted loop preload="metadata">
-  <source src="media/gregTrailer.mp4" type="video/mp4">
+<video id="splash-video" class="video" muted loop preload="metadata" poster="media/gregTrailer.png">
+  <source src="https://s3.amazonaws.com/teamnewbyfitness/gregTrailer.mp4" type="video/mp4">
 </video><!-- /video -->
 <div class="video-placeholder"></div>
 <footer class="footer">
@@ -54,6 +54,11 @@
   /**
    * Check if video can play, and play it
    */
+
+    setTimeout(function(){
+        console.log('after');
+    },2000);
+
   video.addEventListener( "canplay", function() {
     video.play();
   });

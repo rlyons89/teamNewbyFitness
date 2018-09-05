@@ -26,7 +26,7 @@
 </header>
 <div class="content">
   <h1 class="h1-splash">TRAIN LIKE A CHAMP</h1>
-  <button class="primary-button">JOIN NOW!</button>
+  <button id="open-popup" class="primary-button">JOIN NOW!</button>
 </div><!-- /content -->
 
 <video id="splash-video" class="video" muted loop preload="none" poster="media/gregTrailerLarge.png">
@@ -71,6 +71,15 @@
 })();
 </script>
 
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"fde567d77de98ec742bfe359e","lid":"e09ed6b397","uniqueMethods":false}) })</script>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script>
+function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"fde567d77de98ec742bfe359e","lid":"e09ed6b397"}) })
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>
 </body>
 </html>

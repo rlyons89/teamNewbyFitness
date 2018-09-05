@@ -351,6 +351,7 @@ body {
     font-weight: 900;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .class-column {

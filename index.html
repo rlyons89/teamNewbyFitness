@@ -45,6 +45,8 @@
 </footer>
 
 <script>
+
+
 (function() {
   /**
    * Video element
@@ -54,12 +56,18 @@
   /**
    * Check if video can play, and play it
    */
-    video.load();
 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+     //don't load video
+    }
+    else{
+        video.load();
 
-  video.addEventListener( "canplay", function() {
-    video.play();
-  });
+        video.addEventListener( "canplay", function() {
+            video.play();
+        });
+    }
+
 })();
 </script>
 </body>

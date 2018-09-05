@@ -30,7 +30,7 @@
 </div><!-- /content -->
 
 <video id="splash-video" class="video" muted loop preload="none" poster="media/gregTrailerLarge.png">
-  <source src="https://s3.amazonaws.com/teamnewbyfitness/gregTrailer.mp4" type="video/mp4">
+  <source type="video/mp4">
 </video><!-- /video -->
 <div class="video-placeholder"></div>
 <footer class="footer">
@@ -61,6 +61,7 @@
      //don't load video
     }
     else{
+        video.src = "https://s3.amazonaws.com/teamnewbyfitness/gregTrailer.mp4";
         video.load();
 
         video.addEventListener( "canplay", function() {
